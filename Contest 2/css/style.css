@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+/******** Navbar *********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #E5F4FB;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #637279;
+  font-size: 16px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #774894;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+nav ul li a.active::after,
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  background-image:url(../images/blue_bg.png) ;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  color: #637279;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #7c58a3;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.hero-content img {
+  width: 300px;
+}
+
+.login-btn button {
+  padding: 10px 30px;
+  background-color: #ffff;
+  color: #637279;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-btn button:hover {
+  background-color: #774894;
+  color: #ffff;
+}
+
+.hero-image {
+  position: relative;
+  top: 70px;
+  width: 50%;
+  height: 400px;
+}
+
+.hero-image img {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.pic1 {
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+
+.pic2 {
+  z-index: 2;
+  bottom: 150px;
+  width: 250px;
+}
+
+.pic3 {
+  z-index: 3;
+  bottom: 80px;
+  width: 300px;
+}
+/******* services *********/
+.SERVICES {
+  margin: 100px 50px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 10%;
+  max-width: 80%;
+  z-index: -1;
+}
+.pic4{
+  max-width: 80%;
+  position: absolute;
+  top: 470px;
+}
+.pic5 ,.pic7,.pic8{
+  width: 200px;
+}
+.pic6{
+  padding-top: 100px;
+  width: 250px ;
+  position: relative;
+}
+.abs1{
+  position: absolute;
+  top: 1120px;
+  left: 105px;
+  color: #ffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.abs2{
+  position: absolute;
+  padding-bottom: 20px;
+  top: 1150px;
+  left: 100px;
+  color: #ffff;
+  font-size: 32px;
+}
+.services-section2{
+  margin-top: 200px;
+  padding-left: 200px;
+}
+.services-section3{
+  margin-top: 400px;
+  padding-left: 250px;
+}
+.services-section h2 , .services-section2 h2 , .services-section3 h2{
+  text-align: center;
+  font-size: 20px;
+  color: #566369;
+}
+.services-section p , .services-section2 p , .services-section3 p{
+  text-align: center;
+  font-size: 13px;
+  padding-top: 15px;
+  color: #566369bb;
+}
+.services{
+  display: flex;
+  justify-content: center;
+}
+
+/******* scroll section *********/
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: #fff;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.pic10,.pic12{
+  width: 200px;
+}
+.feature h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+.c{
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/***** footer ******/
+.footer {
+  position: relative;
+  background-image:url(../images/Group\ 1131\ 2.png) ;
+  background-size: cover;
+  height: 85vh;
+}
+.apple{
+  position:absolute ;
+  top: 250px;
+}
+.icon{
+  gap: 30px;
+  display: flex;
+  padding-top: 400px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+.nav ul {
+  padding-left: 50px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.pic15{
+  position: absolute;
+  top: 173px;
+  right: 180px;
+}
